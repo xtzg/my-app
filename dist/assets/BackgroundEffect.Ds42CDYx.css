@@ -1,0 +1,1 @@
+.background-effect{position:relative;width:100%;height:100%;overflow:hidden}.distortion-layer,.particles-layer{position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none}.distortion-layer{z-index:1}.particles-layer{z-index:2;mix-blend-mode:screen;opacity:.7}
