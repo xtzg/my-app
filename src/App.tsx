@@ -13,10 +13,10 @@ const Counter = () => {
   return (
     <div className="card">
       <button onClick={() => setCount((count) => count + 1)}>
-        count is {count}
+        计数器 {count}
       </button>
       <p>
-        Edit <code>src/App.tsx</code> and save to test HMR
+        点击按钮可以增加计数器，虽然没啥用
       </p>
     </div>
   )
@@ -40,7 +40,7 @@ function App() {
       <div className="background-container">
         <Suspense fallback={<div className="loading">Loading...</div>}>
           <BackgroundEffect
-            imageSrc="src/assets/images/撰写个人博客 UI 功能文档 (3).png"
+            imageSrc="./src/assets/images/background.png"
             grid={40}
             distortionStrength={0.01}
             relaxation={0.9}
@@ -63,7 +63,7 @@ function App() {
         <h1>Vite + React</h1>
         <Counter />
         <p className="read-the-docs">
-          Click on the Vite and React logos to learn more
+          点那两图标可以跳转，虽然可能会禁访问
         </p>
       </div>
     </>
