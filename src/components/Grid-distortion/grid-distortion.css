@@ -1,0 +1,24 @@
+.distortion-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* 添加或修改网格扭曲组件的样式 */
+.custom-class {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    pointer-events: auto;
+    /* 确保可以接收鼠标事件 */
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: auto;
+    /* 确保 canvas 可以接收鼠标事件 */
+}
