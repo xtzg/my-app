@@ -63,100 +63,17 @@
   padding: 2rem;
   box-sizing: border-box;
   color: rgba(255, 255, 255, 0.87);
+  z-index: 3;
   pointer-events: none;
+}
+
+/* 登录表单样式 */
+.login-form-container {
+  z-index: 4;
+  pointer-events: auto;
 }
 
 /* 内容交互元素样式 */
 /* .content-wrapper>* {
   pointer-events: auto;
 } */
-
-/* Logo样式 */
-.logo {
-  height: 6em;
-  /* Logo高度 */
-  padding: 1.5em;
-  /* Logo内边距 */
-  will-change: filter;
-  /* 优化过滤器动画性能 */
-  transition: filter 300ms;
-  /* 过滤器过渡动画 */
-  position: relative;
-  /* 相对定位 */
-  z-index: 1;
-  /* 确保可点击 */
-  pointer-events: auto;
-}
-
-/* Logo悬停效果 */
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-  /* 悬停时添加阴影 */
-  pointer-events: auto;
-}
-
-/* React Logo特殊悬停效果 */
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-  /* React Logo特有的阴影颜色 */
-  pointer-events: auto;
-}
-
-/* Logo旋转动画关键帧 */
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-    /* 起始角度 */
-  }
-
-  to {
-    transform: rotate(360deg);
-    /* 结束角度 */
-  }
-}
-
-/* 根据用户偏好应用动画 */
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-    /* 应用旋转动画 */
-  }
-}
-
-/* 卡片、标题和文档说明的共同样式 */
-.card,
-h1 {
-  color: #fff;
-}
-
-.read-the-docs {
-  position: relative;
-  /* 相对定位 */
-  z-index: 1;
-  /* 确保可点击 */
-}
-
-/* 卡片样式 */
-.card {
-  padding: 2em;
-  /* 卡片内边距 */
-  pointer-events: auto;
-}
-
-/* 文档说明文本样式 */
-.read-the-docs {
-  color: #888;
-  /* 文本颜色 */
-}
-
-/* 加载状态样式 */
-.loading {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #13151a;
-  color: rgba(255, 255, 255, 0.87);
-  font-size: 1.5rem;
-}
