@@ -41,7 +41,7 @@ function App() {
         <Suspense fallback={<div className="loading">Loading...</div>}>
           <BackgroundEffect
             imageSrc="./src/assets/images/background.png"
-            grid={40}
+            grid={10}
             distortionStrength={0.01}
             relaxation={0.9}
             particleCount={400}
